@@ -8,7 +8,7 @@ const char* PASS = "YOUR SIAM PASSWORD"
 
 void setup() {
   Serial.begin(9600);
-  WiFi.begin(SSID, PASS);
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
   while(WiFi.status() != WL_CONNECTED){
     delay(200);
     Serial.println("Connecting...");
